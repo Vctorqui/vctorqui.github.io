@@ -1,0 +1,22 @@
+/*----------------------------banner-header-------------------------------*/
+#banner {
+  background-image: url(/assets/images/bg-banner.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: calc(100vh + 150px);
+  padding-top: 150px;
+  h1,
+  h3,
+  p {
+    color: $white;
+    font-style: normal;
+  }
+  .number-dorms {
+    color: $text;
+  }
+
+  .btn.btn-primary {
+    margin-top: 15px;
+  }
+}
