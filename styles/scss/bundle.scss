@@ -1,7 +1,9 @@
 // modules
 @import "variables/color";
-// @import "components/master";
-// @import "components/navbar";
+@import "components/header";
+@import "components/footer";
 @import "components/footer";
 @import "site/home";
+@import "site/home-queries";
+@import "site/index";
 // @import "site/media-queries";
