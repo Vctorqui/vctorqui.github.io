@@ -1,5 +1,11 @@
 .footer {
-  background-color: $primary;
+  background: rgb(76, 112, 152);
+  background: linear-gradient(
+    90deg,
+    rgba(76, 112, 152, 1) 0%,
+    rgba(113, 139, 184, 1) 36%,
+    rgba(148, 165, 215, 1) 100%
+  );
   padding-top: 150px;
   padding-bottom: 88px;
   margin-top: -70px;

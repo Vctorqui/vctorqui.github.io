@@ -30,31 +30,55 @@
     <div class="banner">
       <div class="container">
         <div class="header-content">
-          <h4 class="header-subtitle">Hello, I am</h4>
-          <h1 class="header-title">Víctor Quiñones</h1>
-          <h4 class="header-mono">Frond-end Developer</h4>
+          <h4 class="header-subtitle wow backInDown">Hello, I am</h4>
+          <h1 class="header-title wow backInLeft">Víctor Quiñones</h1>
+          <h4 class="header-mono wow backInRight">Frond-end Developer</h4>
           <!-- <button class="btn btn-primary">
             <i class="ti-printer pr-2"></i>Print Resume
           </button> -->
         </div>
-        <div class="banner-nav">
+        <div class="banner-nav wow backInUp">
           <ul>
-            <li><a href="">About Me</a></li>
-            <li><a href="">Projects</a></li>
-            <li><a href="">Contact</a></li>
+            <li><a href="#about-me">About Me</a></li>
+            <li><a href="#featured-project">Projects</a></li>
+            <li><a href="#products">Contact</a></li>
           </ul>
         </div>
       </div>
     </div>
 
-    <section class="featured-project">
+    <section id="about-me" class="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="about-me-descript wow backInUp">
+              <h4>About me</h4>
+              <p>
+                I'm a Freelance Web Developer based in Venezuela Who loves to
+                learn new things, work with individuals, startups and
+                collaborate with talented people around the world building
+                websites and applications with a wide range of technologies.
+              </p>
+              <p>
+                My main goal is to improve, learn more every day and be able to
+                help new entrepreneurs and small businesses to reach bigger
+                markets and build web presence using the latest and most
+                demanding development trends.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="featured-project" class="featured-project">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title wow backInDown">Featured Projects</h2>
           </div>
           <div class="col-lg-6 col-12">
-            <div class="project-item">
+            <div class="project-item wow backInLeft">
               <figure class="item-bg">
                 <img src="assets/images/project-1.jpg" alt="Lisboa-project" />
                 <div class="description-item">
@@ -72,7 +96,7 @@
             </div>
           </div>
           <div class="col-lg-6 col-12">
-            <div class="project-item">
+            <div class="project-item wow backInRight">
               <figure class="item-bg">
                 <img src="assets/images/project-2.jpg" alt="Lyon-project" />
                 <div class="description-item">
@@ -88,8 +112,29 @@
         </div>
       </div>
     </section>
-    <section class="contact">
-      <div class="container"></div>
+    <section class="products" id="products">
+      <div class="container">
+        <div class="row product-container">
+          <div class="col-lg-12">
+            <h4>Contact to me</h4>
+          </div>
+          <div class="col-lg-2">
+            <a class="product-item" href="#">
+              <i class="fa-brands fa-github"></i>
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a class="product-item" href="#">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+          </div>
+          <div class="col-lg-2">
+            <a class="product-item" href="#">
+              <i class="fa-solid fa-envelope"></i>
+            </a>
+          </div>
+        </div>
+      </div>
     </section>
     <footer class="footer"></footer>
     <script
