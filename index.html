@@ -41,13 +41,17 @@
         <div class="banner-nav wow backInUp">
           <ul>
             <li class="header-item">
-              <a href="#about-me">About Me</a>
+              <a href="#about-me">About Me<i class="fa-solid fa-user"></i></a>
             </li>
             <li class="header-item">
-              <a href="#featured-project">Projects</a>
+              <a href="#featured-project"
+                >Projects <i class="fa-solid fa-code"></i
+              ></a>
             </li>
             <li class="header-item">
-              <a href="#products">Contact</a>
+              <a href="#products"
+                >Contact<i class="fa-regular fa-message"></i
+              ></a>
             </li>
           </ul>
         </div>
@@ -148,9 +152,12 @@
           <div class="col-lg-6 col-12">
             <div class="project-item wow backInRight">
               <figure class="item-bg">
-                <img src="assets/images/project-2.jpg" alt="Lyon-project" />
+                <img src="assets/images/project-3.jpg" alt="catoo-project" />
                 <div class="description-item">
-                  <a href="https://lyon.com.uy/" target="_blank">
+                  <a
+                    href="https://vctorqui.github.io/catoo-main-master/"
+                    target="_blank"
+                  >
                     <span>Source</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a>
@@ -167,9 +174,12 @@
           <div class="col-lg-6 col-12">
             <div class="project-item wow backInRight">
               <figure class="item-bg">
-                <img src="assets/images/project-2.jpg" alt="Lyon-project" />
+                <img src="assets/images/project-4.jpg" alt="Lyon-project" />
                 <div class="description-item">
-                  <a href="https://lyon.com.uy/" target="_blank">
+                  <a
+                    href="https://github.com/Vctorqui/react-projects"
+                    target="_blank"
+                  >
                     <span>Source</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a>
@@ -190,91 +200,103 @@
       <div class="container">
         <!-- Button trigger modal -->
         <div class="row product-container">
-          <button
-            type="button"
-            class="btn btn-outline-dark contactBtn"
-            data-bs-toggle="modal"
-            data-bs-target="#staticBackdrop"
-          >
-            Get in touch!
-          </button>
-          <!-- Modal -->
-          <div
-            class="modal fade"
-            id="staticBackdrop"
-            data-bs-backdrop="static"
-            data-bs-keyboard="false"
-            tabindex="-1"
-            aria-labelledby="staticBackdropLabel"
-            aria-hidden="true"
-          >
-            <div class="modal-dialog modal-dialog-centered">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                    Contact me
-                  </h1>
-                  <button
-                    type="button"
-                    class="btn-close"
-                    data-bs-dismiss="modal"
-                    aria-label="Close"
-                  ></button>
-                </div>
-                <div class="modal-body">
-                  <form
-                    class="contact-form"
-                    action="https://formspree.io/f/mqkragdo"
-                    method="POST"
-                  >
-                    <label class="input-contact">
-                      Email:
+          <div class="col-lg-12 btn-container">
+            <button
+              type="button"
+              class="btn contactBtn animated infinite pulse"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              <span>Get in touch! <i class="fa-regular fa-handshake"></i></span>
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
+                      Contact me
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <div class="modal-body">
+                    <form
+                      class="contact-form"
+                      action="https://formspree.io/f/mqkragdo"
+                      method="POST"
+                    >
+                      <label for="name">Name</label>
                       <input
-                        type="email"
-                        name="email"
-                        placeholder="please write your email"
+                        name="name"
+                        placeholder="Your Name / Company"
+                        type="text"
                       />
-                    </label>
-                    <label class="input-contact">
-                      Your message:
-                      <textarea
-                        name="message"
-                        placeholder="please write the subject of the message"
-                      ></textarea>
-                    </label>
-                    <!-- your other form fields go here -->
-                    <button class="btn btn-primary" type="submit">Send</button>
-                  </form>
-                </div>
-                <div class="modal-footer">
-                  <button
-                    type="button"
-                    class="btn btn-secondary"
-                    data-bs-dismiss="modal"
-                  >
-                    Close
-                  </button>
+                      <label class="input-contact">
+                        Email:
+                        <input
+                          type="email"
+                          name="email"
+                          placeholder="please write your email"
+                        />
+                      </label>
+                      <label class="input-contact">
+                        Your message:
+                        <textarea
+                          name="message"
+                          placeholder="please write the subject of the message"
+                        ></textarea>
+                      </label>
+                      <!-- your other form fields go here -->
+                      <button class="btn btn-primary" type="submit">
+                        Send
+                      </button>
+                    </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Close
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-2 social-link">
-            <a
-              class="product-item"
-              href="https://github.com/Vctorqui"
-              target="_blank"
-            >
-              <i class="fa-brands fa-github"></i>
-            </a>
-          </div>
-          <div class="col-lg-2 social-link">
-            <a
-              class="product-item"
-              href="https://www.linkedin.com/in/victor-qui%C3%B1ones-a41084249/"
-              target="_blank"
-            >
-              <i class="fa-brands fa-linkedin"></i>
-            </a>
+          <div class="social-container">
+            <div class="social-link">
+              <a
+                class="product-item"
+                href="https://github.com/Vctorqui"
+                target="_blank"
+              >
+                <i class="fa-brands fa-github"></i>
+              </a>
+            </div>
+            <div class="social-link">
+              <a
+                class="product-item"
+                href="https://www.linkedin.com/in/victor-qui%C3%B1ones-a41084249/"
+                target="_blank"
+              >
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
           </div>
           <!-- <div class="col-lg-2">
             <a class="product-item" href="#">
