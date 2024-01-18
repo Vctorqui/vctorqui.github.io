@@ -1,0 +1,25 @@
+@media (max-width: 767.98px) {
+  #banner {
+    .header-title {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    .banner-nav {
+      .nav-container {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+    .banner-nav {
+      .nav-container {
+        .header-item {
+          a {
+            font-size: 1rem;
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 575.98px) {
+}

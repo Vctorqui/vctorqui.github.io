@@ -14,3 +14,5 @@ new WOW({offset:offset, scrollContainer: null}).init()
 
 $('header').load('components/header.html')
 $('footer').load('components/footer.html')
+
+console.log()
