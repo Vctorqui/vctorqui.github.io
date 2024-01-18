@@ -27,7 +27,7 @@
   </head>
   <body>
     <!-- <header></header> -->
-    <div class="banner">
+    <div class="banner" id="banner">
       <div class="container">
         <div class="header-content">
           <h4 class="header-subtitle wow backInDown">Hello, I am</h4>
@@ -39,19 +39,21 @@
         </div>
 
         <div class="banner-nav wow backInUp">
-          <ul>
+          <ul class="nav-container">
             <li class="header-item">
               <a href="#about-me">About Me<i class="fa-solid fa-user"></i></a>
             </li>
             <li class="header-item">
               <a href="#featured-project"
-                >Projects <i class="fa-solid fa-code"></i
-              ></a>
+                >Projects
+                <i class="fa-solid fa-code"></i>
+              </a>
             </li>
             <li class="header-item">
               <a href="#products"
-                >Contact<i class="fa-regular fa-message"></i
-              ></a>
+                >Contact
+                <i class="fa-regular fa-message"> </i>
+              </a>
             </li>
           </ul>
         </div>
@@ -82,22 +84,47 @@
             <div class="user">
               <div class="tech">
                 <h4>Front-end</h4>
-                <i class="fa-brands fa-html5"></i>
-                <i class="fa-brands fa-css3-alt"></i>
-                <i class="fa-brands fa-bootstrap"></i>
-                <i class="fa-brands fa-sass"></i>
-                <i class="fa-brands fa-js"></i>
-                <i class="fa-brands fa-react"></i>
-                <p>
+                <div class="tech-icon">
+                  <div class="item">
+                    <span>HTML5</span>
+                    <i class="fa-brands fa-html5"></i>
+                  </div>
+                  <div class="item">
+                    <span>CSS3</span>
+                    <i class="fa-brands fa-css3-alt"></i>
+                  </div>
+
+                  <div class="item">
+                    <span>Bootstrap</span><i class="fa-brands fa-bootstrap"></i>
+                  </div>
+                  <div class="item">
+                    <span>Sass</span><i class="fa-brands fa-sass"></i>
+                  </div>
+                  <div class="item">
+                    <span>Javascript</span><i class="fa-brands fa-js"></i>
+                  </div>
+                  <div class="item">
+                    <span>ReactJS</span><i class="fa-brands fa-react"></i>
+                  </div>
+                </div>
+                <!-- <p>
                   HTML5, CSS3, Bootstrap, Sass, Javascript,ReactJS, Material UI
-                </p>
+                </p> -->
               </div>
               <div class="tech">
                 <h4>Tools</h4>
-                <i class="fa-brands fa-git-alt"></i>
-                <i class="fa-brands fa-github"></i>
-                <i class="devicon-heroku-plain colored"></i>
-                <p>Git, GitHub</p>
+                <div class="tech-icon">
+                  <div class="item">
+                    <span>Git</span>
+                    <i class="fa-brands fa-git-alt"></i>
+                  </div>
+                  <div class="item">
+                    <span>GitHub</span>
+                    <i class="fa-brands fa-github"></i>
+                  </div>
+                  <i class="devicon-heroku-plain colored"></i>
+                </div>
+                <!-- <p>Git, GitHub</p> -->
               </div>
             </div>
           </div>
@@ -125,7 +152,9 @@
                     >Website to promote a residential project. Responsive design
                     using Sass preprocessor.
                   </span>
-                  <span>HTML, Sass, Responsive Design, JavaScript</span>
+                  <span class="tools"
+                    >HTML, Sass, Responsive Design, JavaScript</span
+                  >
                 </div>
               </figure>
             </div>
@@ -144,7 +173,9 @@
                     >Website to promote a residential project. Responsive design
                     using Sass preprocessor.
                   </span>
-                  <span>HTML, Sass, Responsive Design, JavaScript</span>
+                  <span class="tools"
+                    >HTML, Sass, Responsive Design, JavaScript</span
+                  >
                 </div>
               </figure>
             </div>
@@ -161,12 +192,12 @@
                     <span>Source</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a>
-                  <h4>Lyon by Continents</h4>
-                  <span
-                    >Website to promote a residential project. Responsive design
-                    using Sass preprocessor.
+                  <h4>Catoo</h4>
+                  <span>
+                    This is my own version of an app called TinDog that I code
+                    in a Bootcamp of Dr. Angela Yuuu
                   </span>
-                  <span>HTML, Sass, Responsive Design, JavaScript</span>
+                  <span class="tools">HTML, CSS, Responsive Design</span>
                 </div>
               </figure>
             </div>
@@ -183,12 +214,12 @@
                     <span>Source</span>
                     <i class="fa-solid fa-magnifying-glass"></i>
                   </a>
-                  <h4>Lyon by Continents</h4>
-                  <span
-                    >Website to promote a residential project. Responsive design
-                    using Sass preprocessor.
+                  <h4>ReactJS Projects</h4>
+                  <span>
+                    Personal proyects to practice and show how to make an app
+                    using differents components on React
                   </span>
-                  <span>HTML, Sass, Responsive Design, JavaScript</span>
+                  <span class="tools">HTML, CSS, React, TypeScript</span>
                 </div>
               </figure>
             </div>
@@ -238,7 +269,7 @@
                       action="https://formspree.io/f/mqkragdo"
                       method="POST"
                     >
-                      <label for="name">Name</label>
+                      <label for="name">Name:</label>
                       <input
                         name="name"
                         placeholder="Your Name / Company"
@@ -260,7 +291,10 @@
                         ></textarea>
                       </label>
                       <!-- your other form fields go here -->
-                      <button class="btn btn-primary" type="submit">
+                      <button
+                        class="btn btn-outline-dark btn-send"
+                        type="submit"
+                      >
                         Send
                       </button>
                     </form>
@@ -268,7 +302,7 @@
                   <div class="modal-footer">
                     <button
                       type="button"
-                      class="btn btn-secondary"
+                      class="btn btn-outline-danger"
                       data-bs-dismiss="modal"
                     >
                       Close

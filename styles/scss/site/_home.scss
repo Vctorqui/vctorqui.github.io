@@ -43,8 +43,8 @@ section {
 
 .btn.btn-primary {
   background-color: $btn;
-  // border-color: $primary;
-  border-radius: 0;
+  border-radius: 5px;
+  border: none;
   padding: 10px 100px;
   color: $black;
 }
@@ -52,7 +52,12 @@ section {
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-  background-color: $btn-hover !important;
-  border-color: $btn-hover !important;
+  background: linear-gradient(
+    90deg,
+    rgba(76, 112, 152, 1) 0%,
+    rgba(113, 139, 184, 1) 36%,
+    rgba(148, 165, 215, 1) 100%
+  );
+
   box-shadow: none !important;
 }
