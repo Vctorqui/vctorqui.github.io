@@ -3,6 +3,7 @@
     .header-title {
       text-align: center;
       font-size: 3.5rem;
+      line-height: normal;
     }
     .banner-nav {
       .nav-container {
@@ -12,10 +13,8 @@
     }
     .banner-nav {
       .nav-container {
-        .header-item {
-          a {
-            font-size: 1rem;
-          }
+        a {
+          font-size: 1rem;
         }
       }
     }

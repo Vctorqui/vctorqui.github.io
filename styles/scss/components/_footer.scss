@@ -6,15 +6,15 @@
     rgba(113, 139, 184, 1) 36%,
     rgba(148, 165, 215, 1) 100%
   );
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding-top: 40px;
+  padding-bottom: 40px;
   margin-top: -70px;
 }
 .copyright {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
   gap: 10px;
   .madeBy {
     text-align: center;
@@ -29,6 +29,10 @@
     padding-top: 60px;
     margin-top: -30px;
     padding-bottom: 40px;
+    .copyright {
+      justify-content: center;
+      flex-direction: column;
+    }
   }
 }
 
