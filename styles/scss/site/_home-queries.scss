@@ -21,4 +21,46 @@
   }
 }
 @media (max-width: 575.98px) {
+  #banner {
+    .banner-container {
+      align-items: center;
+      .bannerBtnContact {
+        align-items: center;
+      }
+    }
+  }
+  #experience {
+    .lineTime {
+      margin-left: 0;
+      &::after {
+        display: none;
+      }
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  #featured-project {
+    .card-container {
+      margin-bottom: 10px;
+    }
+    .btnProject {
+      align-self: center;
+    }
+    .btnProjectContainer {
+      justify-content: center;
+    }
+  }
+
+  #about-me {
+    padding-bottom: 20px;
+    .footerContainer {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      justify-content: center;
+      gap: 40px;
+    }
+  }
 }

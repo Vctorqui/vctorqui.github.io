@@ -18,7 +18,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="assets/lib/animate.min.css" />
@@ -26,303 +26,418 @@
     <title>Victor's Portfolio</title>
   </head>
   <body>
-    <div class="banner" id="banner">
-      <div class="container">
-        <div class="header-content">
-          <h4 class="header-subtitle wow backInDown">Hello, I am</h4>
-          <h1 class="header-title wow backInLeft">Víctor Quiñones</h1>
-          <h4 class="header-mono wow backInRight">Frond-end Developer</h4>
-        </div>
-
-        <div class="banner-nav wow backInUp">
-          <div class="nav-container">
-            <a class="header-item" href="#about-me">
-              About Me
-              <i class="fa-solid fa-user"></i>
-            </a>
-            <a class="header-item" href="#featured-project">
-              Projects
-              <i class="fa-solid fa-code"></i>
-            </a>
-            <a class="header-item" href="#contact">
-              Contact
-              <i class="fa-regular fa-message"> </i>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <section id="about-me" class="about-me">
+    <header></header>
+    <section id="banner" class="banner">
       <div class="container">
         <div class="row">
-          <div class="col-lg-12">
-            <div class="about-me-descript wow backInUp">
-              <h2>About me</h2>
-              <p>
-                I'm a Freelance Web Developer based in Venezuela Who loves to
-                learn new things, work with individuals, startups and
-                collaborate with talented people around the world building
-                websites and applications with a wide range of technologies.
-              </p>
-              <p>
-                My main goal is to improve, learn more every day and be able to
-                help new entrepreneurs and small businesses to reach bigger
-                markets and build web presence using the latest and most
-                demanding development trends.
-              </p>
-            </div>
-          </div>
-          <div class="col-lg-12">
-            <div class="user">
-              <div class="tech">
-                <h4>Front-end</h4>
-                <div class="tech-icon">
-                  <div class="item">
-                    <span>HTML5</span>
-                    <i class="fa-brands fa-html5"></i>
-                  </div>
-                  <div class="item">
-                    <span>CSS3</span>
-                    <i class="fa-brands fa-css3-alt"></i>
-                  </div>
-                  <div class="item">
-                    <span>Bootstrap</span><i class="fa-brands fa-bootstrap"></i>
-                  </div>
-                  <div class="item">
-                    <span>Sass</span><i class="fa-brands fa-sass"></i>
-                  </div>
-                  <div class="item">
-                    <span>Javascript</span><i class="fa-brands fa-js"></i>
-                  </div>
-                  <div class="item">
-                    <span>ReactJS</span><i class="fa-brands fa-react"></i>
-                  </div>
-                </div>
-                <!-- <p>
-                  HTML5, CSS3, Bootstrap, Sass, Javascript,ReactJS, Material UI
-                </p> -->
+          <div class="col-lg-8 col-12 banner-container">
+            <div class="boxBannerProfile">
+              <div class="profile-img-container">
+                <img src="/assets/images/profile.jpg" alt="profile" />
               </div>
-              <div class="tech">
-                <h4>Tools</h4>
-                <div class="tech-icon">
-                  <div class="item">
-                    <span>Git</span>
-                    <i class="fa-brands fa-git-alt"></i>
-                  </div>
-                  <div class="item">
-                    <span>GitHub</span>
-                    <i class="fa-brands fa-github"></i>
-                  </div>
-                  <i class="devicon-heroku-plain colored"></i>
-                </div>
-                <!-- <p>Git, GitHub</p> -->
+              <div class="wrapperBtn">
+                <a
+                  class="btn btn-styled2"
+                  href="https://www.linkedin.com/in/victor-qui%C3%B1ones-a41084249/"
+                  target="_blank"
+                >
+                  <p class="mb-0">Disponible para trabajar</p>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </a>
               </div>
             </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section id="featured-project" class="featured-project">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2 class="section-title">Featured Projects</h2>
-          </div>
-          <div class="col-lg-6 col-12">
-            <a href="https://lisboa.com.py/" target="_blank">
-              <div class="project-item">
-                <figure class="item-bg">
-                  <img src="assets/images/project-1.jpg" alt="Lisboa-project" />
-                  <div class="description-item">
-                    <h4>Lisboa by Continents</h4>
-                    <span
-                      >Website to promote a residential project. Responsive
-                      design using Sass preprocessor.
-                    </span>
-                    <span class="tools"
-                      >HTML, Sass, Responsive Design, JavaScript</span
-                    >
-                  </div>
-                </figure>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-12">
-            <a href="https://lyon.com.uy/" target="_blank">
-              <div class="project-item">
-                <figure class="item-bg">
-                  <img src="assets/images/project-2.jpg" alt="Lyon-project" />
-                  <div class="description-item">
-                    <h4>Lyon by Continents</h4>
-                    <span
-                      >Website to promote a residential project. Responsive
-                      design using Sass preprocessor.
-                    </span>
-                    <span class="tools"
-                      >HTML, Sass, Responsive Design, JavaScript</span
-                    >
-                  </div>
-                </figure>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-12">
-            <a
-              href="https://vctorqui.github.io/catoo-main-master/"
-              target="_blank"
-            >
-              <div class="project-item">
-                <figure class="item-bg">
-                  <img src="assets/images/project-3.jpg" alt="catoo-project" />
-                  <div class="description-item">
-                    <h4>Catoo</h4>
-                    <span>
-                      This is my own version of an app called TinDog that I code
-                      in a Bootcamp of Dr. Angela Yuuu
-                    </span>
-                    <span class="tools">HTML, CSS, Responsive Design</span>
-                  </div>
-                </figure>
-              </div>
-            </a>
-          </div>
-          <div class="col-lg-6 col-12">
-            <a
-              href="https://github.com/Vctorqui/react-projects"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <div class="project-item">
-                <figure class="item-bg">
-                  <img src="assets/images/project-4.jpg" alt="Lyon-project" />
-                  <div class="description-item">
-                    <h4>ReactJS Projects</h4>
-                    <span>
-                      Personal proyects to practice and show how to make an app
-                      using differents components on React
-                    </span>
-                    <span class="tools"
-                      >HTML, CSS, ViteJS, ReactJS, JavaScript, TypeScript</span
-                    >
-                  </div>
-                </figure>
-              </div>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="contact" id="contact">
-      <div class="container">
-        <!-- Button trigger modal -->
-        <div class="row contact-container">
-          <div class="col-lg-12 btn-container">
-            <button
-              type="button"
-              class="btn contactBtn animated infinite pulse"
-              data-bs-toggle="modal"
-              data-bs-target="#staticBackdrop"
-            >
-              <span>Get in touch! <i class="fa-regular fa-handshake"></i></span>
-            </button>
-            <!-- Modal -->
-            <div
-              class="modal fade"
-              id="staticBackdrop"
-              data-bs-backdrop="static"
-              data-bs-keyboard="false"
-              tabindex="-1"
-              aria-labelledby="staticBackdropLabel"
-              aria-hidden="true"
-            >
-              <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="staticBackdropLabel">
-                      Contact me
-                    </h1>
-                    <button
-                      type="button"
-                      class="btn-close"
-                      data-bs-dismiss="modal"
-                      aria-label="Close"
-                    ></button>
-                  </div>
-                  <div class="modal-body">
-                    <form
-                      class="contact-form"
-                      action="https://formspree.io/f/mqkragdo"
-                      method="POST"
-                    >
-                      <label for="name">Name:</label>
-                      <input
-                        name="name"
-                        placeholder="Your Name / Company"
-                        type="text"
-                      />
-                      <label class="input-contact">
-                        Email:
-                        <input
-                          type="email"
-                          name="email"
-                          placeholder="Please write your email"
-                        />
-                      </label>
-                      <label class="input-contact">
-                        Your message:
-                        <textarea
-                          name="message"
-                          placeholder="Please write the subject of the message"
-                        ></textarea>
-                      </label>
-                      <!-- your other form fields go here -->
-                      <button
-                        class="btn btn-outline-dark btn-send"
-                        type="submit"
-                      >
-                        Send
-                      </button>
-                    </form>
-                  </div>
-                  <div class="modal-footer">
-                    <button
-                      type="button"
-                      class="btn btn-outline-danger"
-                      data-bs-dismiss="modal"
-                    >
-                      Close
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="social-container">
-            <div class="social-link">
+            <h1 class="mb-0 display-1 fw-bold">Hey, soy Victor</h1>
+            <h5>
+              tengo 25 años y soy
+              <strong class="underlinedText">Fronted Developer</strong>, amante
+              de la técnologia con habilidades y experiencia en el
+              <strong class="underlinedText"
+                >desarrollo de aplicaciones web únicas.</strong
+              >
+            </h5>
+            <div class="bannerBtnContact">
               <a
-                class="contact-item"
-                href="https://github.com/Vctorqui"
+                class="btn btn-secondary"
+                href="/cv-victor-quiñones1.pdf"
                 target="_blank"
               >
-                <i class="fa-brands fa-github"></i>
+                <i class="fa-solid fa-file"></i
+                ><span class="fw-bold">Curriculum</span>
               </a>
-            </div>
-            <div class="social-link">
               <a
-                class="contact-item"
+                class="btn btn-secondary"
                 href="https://www.linkedin.com/in/victor-qui%C3%B1ones-a41084249/"
                 target="_blank"
               >
-                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin"></i
+                ><span class="fw-bold">Linkedin</span>
               </a>
             </div>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer"></footer>
+    <section id="experience" class="experience">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 title-container">
+            <h2 class="display-6 fw-bold white-line white-line-left">
+              Experiencia
+            </h2>
+          </div>
+          <div class="lineTime">
+            <h4 class="fw-bold">Junior Frontend Developer</h4>
+            <h5 class="fw-bold">Employee hired by Full Stack Developer</h5>
+            <small>Actualmente...</small>
+            <div class="mt-4">
+              <ul>
+                <li>
+                  Desarrollo de UI's responsive utilizando frameworks HTML, CSS
+                  y Javascript como React y NextJs.
+                </li>
+                <li>
+                  La gestión de estados en grandes aplicaciones con React
+                  Content.
+                </li>
+                <li>
+                  Consumo de API's para la integración de datos dentro del
+                  Frontend.
+                </li>
+                <li>Adaptar paradigmas funcionales a problemas comunes.</li>
+                <li>
+                  La planificación de proyectos mediante metodologías ágiles.
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="featured-project" class="featured-project">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 title-container">
+            <h2 class="display-6 fw-bold white-line white-line-left">
+              Proyectos
+            </h2>
+          </div>
+          <div class="col-lg-6 col-12 card-container">
+            <div class="card mb-3 cardProjectSyled">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <img
+                    src="/assets/images/projects/1.jpg"
+                    class="img-fluid rounded-start"
+                    alt="project-1"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <div>
+                      <h4 class="card-title">Lisboa by Continents</h4>
+                      <div class="tools">
+                        <a class="btn btn-html"
+                          ><i class="fa-brands fa-html5"></i>HTML</a
+                        >
+                        <a class="btn btn-sass"
+                          ><i class="fa-brands fa-sass"></i>SASS</a
+                        >
+                        <a class="btn btn-bootstrap"
+                          ><i class="fa-brands fa-bootstrap"></i>Bootstrap</a
+                        >
+                        <a class="btn btn-javascript"
+                          ><i class="fa-brands fa-js"></i>JavaScript</a
+                        >
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        Website to promote a residential project. Responsive
+                        design using Sass preprocessor.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btnProject"
+                href="https://lisboa.com.py/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-eye"></i><small>Preview</small>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card mb-3 cardProjectSyled">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <img
+                    src="/assets/images/projects/2.jpg"
+                    class="img-fluid rounded-start"
+                    alt="project-1"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <div>
+                      <h4 class="card-title">Lyon by Continents</h4>
+                      <div class="tools">
+                        <a class="btn btn-html"
+                          ><i class="fa-brands fa-html5"></i>HTML</a
+                        >
+                        <a class="btn btn-sass"
+                          ><i class="fa-brands fa-sass"></i>SASS</a
+                        >
+                        <a class="btn btn-bootstrap"
+                          ><i class="fa-brands fa-bootstrap"></i>Bootstrap</a
+                        >
+                        <a class="btn btn-javascript"
+                          ><i class="fa-brands fa-js"></i>JavaScript</a
+                        >
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        Website to promote a residential project. Responsive
+                        design using Sass preprocessor.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btnProject"
+                href="https://lyon.com.uy/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-eye"></i><small>Preview</small>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card mb-3 cardProjectSyled">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <img
+                    src="/assets/images/projects/3.jpg"
+                    class="img-fluid rounded-start"
+                    alt="project-1"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <div>
+                      <h4 class="card-title">La Pituca</h4>
+                      <div class="tools">
+                        <a class="btn btn-html"
+                          ><i class="fa-brands fa-html5"></i>HTML</a
+                        >
+                        <a class="btn btn-bootstrap"
+                          ><i class="fa-brands fa-bootstrap"></i>Bootstrap</a
+                        >
+                        <a class="btn btn-sass"
+                          ><i class="fa-brands fa-sass"></i>SASS</a
+                        >
+                        <a class="btn btn-javascript"
+                          ><i class="fa-brands fa-js"></i>JavaScript</a
+                        >
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        Website to promote a residential project. Responsive
+                        design using Sass preprocessor.
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <a
+                class="btn btnProject"
+                href="https://lapituca.com.py/"
+                target="_blank"
+              >
+                <i class="fa-solid fa-eye"></i><small>Preview</small>
+              </a>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <div class="card mb-3 cardProjectSyled">
+              <div class="row g-0">
+                <div class="col-lg-6">
+                  <img
+                    src="/assets/images/projects/4.jpg"
+                    class="img-fluid rounded-start"
+                    alt="project-1"
+                  />
+                </div>
+                <div class="col-lg-6">
+                  <div class="card-body">
+                    <div>
+                      <h4 class="card-title">Catoo</h4>
+                      <div class="tools">
+                        <a class="btn btn-html"
+                          ><i class="fa-brands fa-html5"></i>HTML</a
+                        >
+                        <a class="btn btn-css"
+                          ><i class="fa-brands fa-css3-alt"></i>CSS</a
+                        >
+                        <a class="btn btn-bootstrap"
+                          ><i class="fa-brands fa-bootstrap"></i>Bootstrap</a
+                        >
+                      </div>
+                    </div>
+                    <p class="card-text">
+                      <small class="text-body-secondary">
+                        This is my own version of an app called TinDog that I
+                        code in a Bootcamp of Dr. Angela Yuuu. Inspired by a
+                        date app called Badoo
+                      </small>
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="btnProjectContainer">
+                <a
+                  class="btn btnProject"
+                  href="https://vctorqui.github.io/catoo-main-master/"
+                  target="_blank"
+                >
+                  <i class="fa-solid fa-eye"></i><small>Preview</small>
+                </a>
+                <a
+                  class="btn btnProject"
+                  href="https://github.com/Vctorqui/catoo-main-master"
+                  target="_blank"
+                >
+                  <i class="fa-brands fa-github"></i><small>Source</small>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about-me" class="about-me">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8">
+            <div class="about-me-descript wow bounceIn">
+              <h2 class="display-6 fw-bold white-line white-line-left">
+                Sobre mí
+              </h2>
+              <p>
+                Soy un Desarrollador Web Freelance ubicado en Venezuela a quien
+                <strong class="underlinedText">
+                  le encanta aprender cosas nuevas, trabajar con particulares
+                  startups y colaborar con gente talentosa alrededor del
+                  mundo</strong
+                >
+                construyendo sitios web y aplicaciones con una amplia gama de
+                tecnologías.
+              </p>
+              <p>
+                <strong class="underlinedText">
+                  Mi principal objetivo es mejorar, aprender más cada
+                  día</strong
+                >
+                y ser capaz de ayudar a nuevos emprendedores y pequeñas empresas
+                a alcanzar mercados más grandes y construir presencia web
+                utilizando las últimas y más exigentes tendencias de desarrollo.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="footerContainer">
+              <p>© 2024 Victor. Casi todos los derechos reservados</p>
+              <button
+                type="button"
+                class="btn ov-btn-slide-left"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                <span
+                  >Get in touch! <i class="fa-regular fa-handshake"></i
+                ></span>
+              </button>
+              <!-- Modal -->
+              <div
+                class="modal fade"
+                id="staticBackdrop"
+                data-bs-backdrop="static"
+                data-bs-keyboard="false"
+                tabindex="-1"
+                aria-labelledby="staticBackdropLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog modal-dialog-centered">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h2
+                        class="modal-title fs-5 fw-bold"
+                        id="staticBackdropLabel"
+                      >
+                        Contact me
+                      </h2>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form
+                        class="contact-form"
+                        action="https://formspree.io/f/mqkragdo"
+                        method="POST"
+                      >
+                        <label for="name">Name:</label>
+                        <input
+                          name="name"
+                          placeholder="Your Name / Company"
+                          type="text"
+                        />
+                        <label class="input-contact">
+                          Email:
+                          <input
+                            type="email"
+                            name="email"
+                            placeholder="Please write your email"
+                          />
+                        </label>
+                        <label class="input-contact">
+                          Your message:
+                          <textarea
+                            name="message"
+                            placeholder="Please write the subject of the message"
+                          ></textarea>
+                        </label>
+                        <!-- your other form fields go here -->
+                        <button class="btn btn-send" type="submit">Send</button>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-outline-danger"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <script
       src="https://code.jquery.com/jquery-3.6.1.min.js"
       integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
@@ -339,5 +454,6 @@
     ></script>
     <script type="text/javascript" src="assets/lib/wow.min.js"></script>
     <script type="text/javascript" src="assets/index.js"></script>
+    <script type="text/javascript" src="assets/nav.js"></script>
   </body>
 </html>

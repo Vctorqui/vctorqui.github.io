@@ -18,7 +18,7 @@ p.h5,
 h5,
 p.h6,
 h6 {
-  font-family: Roboto;
+  font-family: Onest;
   color: $text;
 }
 
@@ -28,8 +28,12 @@ div,
 input,
 button,
 textarea {
-  font-family: Roboto;
+  font-family: Onest;
   color: $text-secondary;
+}
+
+.underlinedText {
+  color: rgb(254, 249, 195);
 }
 
 img {
@@ -41,23 +45,197 @@ section {
   padding: 8vh 0;
 }
 
-.btn.btn-primary {
-  background-color: $btn;
-  border-radius: 5px;
+.white-line {
+  position: relative;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  &::before {
+    content: "";
+    bottom: 0;
+    width: 64px;
+    height: 1.5px;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: $white;
+  }
+  &.white-line-left {
+    padding-bottom: 0;
+    &::before {
+      margin-right: 16px;
+      transform: translate(0, -0.3em);
+      left: 0;
+      position: relative;
+      display: inline-block;
+    }
+  }
+}
+
+.btn.btn-html {
+  background-color: #e34c26;
+  border-radius: 10px;
   border: none;
-  padding: 10px 100px;
+  width: 70px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-css {
+  background-color: #264de4;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-sass {
+  background-color: #cc6699;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-bootstrap {
+  background-color: #563d7c;
+  border-radius: 10px;
+  border: none;
+  width: 90px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-javascript {
+  background-color: #f7df1e;
+  border-radius: 10px;
+  border: none;
+  width: 90px;
+  height: 22px;
   color: $black;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: $white;
+  border: 1px solid $white;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 150px;
+  &:hover {
+    color: #1f2544; /* color de fuente hover */
+  }
+  &::after {
+    content: "";
+    background: $white; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  &:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+}
+
+.btn.btn-send {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  color: $primary;
+  border: 1px solid $primary;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  width: 150px;
+  &:hover {
+    color: $white; /* color de fuente hover */
+  }
+  &::after {
+    content: "";
+    background: $primary; /* color de fondo hover */
+    position: absolute;
+    z-index: -1;
+    padding: 16px 20px;
+    display: block;
+    top: 0;
+    bottom: 0;
+    left: -100%;
+    right: 100%;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+  &:hover::after {
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    -webkit-transition: all 0.35s;
+    transition: all 0.35s;
+  }
+}
+
+.btn.btn-primary {
+  background: transparent;
+  border: 1px solid $white;
+  border-radius: 10px;
+  width: 150px;
+  text-decoration: none;
+  color: $white;
+  padding: 10px;
 }
 
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-  background: linear-gradient(
-    90deg,
-    rgba(76, 112, 152, 1) 0%,
-    rgba(113, 139, 184, 1) 36%,
-    rgba(148, 165, 215, 1) 100%
-  );
-
+  background: $white;
+  border: 1px solid #1f2544;
   box-shadow: none !important;
+  color: #1f2544;
 }
