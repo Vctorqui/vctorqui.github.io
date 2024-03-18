@@ -140,6 +140,61 @@ section {
   align-items: center;
   gap: 5px;
 }
+.btn.btn-material {
+  background-color: #010b17;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-react {
+  background-color: #00d8ff;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-next {
+  background-color: #fff;
+  border-radius: 10px;
+  border: none;
+  width: 70px;
+  height: 22px;
+  color: $black;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
+
+.btn.btn-typescript {
+  background-color: #3178c6;
+  border-radius: 10px;
+  border: none;
+  width: 100px;
+  height: 22px;
+  color: $white;
+  font-size: small;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+}
 
 .btn.btn-secondary {
   display: flex;
